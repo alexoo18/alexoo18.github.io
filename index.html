@@ -399,6 +399,10 @@
             border-radius: 20px;
             font-size: 0.75rem;
             transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            z-index: 10;
+            display: inline-block;
         }
 
         .project-link:hover {
@@ -513,6 +517,17 @@
                 gap: 2rem;
             }
 
+            .instagram-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.8rem;
+            }
+
+            .instagram-profile {
+                flex-direction: column;
+                text-align: center;
+                padding: 1rem;
+            }
+
             section {
                 padding: 50px 1rem;
             }
@@ -597,30 +612,43 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="animate-on-scroll">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-content">
-            <!-- Image -->
-            <div class="about-image">
-                <img src="images/mepic.jpg" alt="Profile picture" class="profile-pic">
-            </div>
+<!-- About Section -->
+<section id="about" class="animate-on-scroll">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-content">
+        <!-- Image -->
+        <div class="about-image-container">
+            <img src="images/mepic.jpg" alt="Alessandra Khaing Oo" class="profile-image">
+        </div>
+        
+        <!-- Text -->
+        <div class="about-text">
+            <h3>Driven by Performance</h3>
+            <p>My work is defined by precision and performance. With a strong background in engineering and technology, I focus on developing solutions that are efficient, reliable, and capable of delivering results under pressure.</p>
             
-            <!-- Text -->
-            <div class="about-text justified">
-                <h3 class="about-heading">Driven by Performance</h3>
-                <p>
-                    My work is defined by precision and performance. With a strong background in engineering and technology, I focus on developing solutions that are efficient, reliable, and capable of delivering results under pressure.
-                </p>
-                <p>
-                    My approach reflects race strategy: thorough preparation, exact execution, and continuous refinement. Whether it is tackling complex technical challenges or optimising existing systems, I bring the same discipline and focus that motorsport engineering demands.
-                </p>
-                <p>
-                    Outside of work, I follow Formula One closely. I analyse race data, study strategy, and explore automotive innovation. This passion for speed, accuracy, and problem-solving shapes the way I approach engineering.
-                </p>
+            <p>My approach reflects race strategy: thorough preparation, exact execution, and continuous refinement. Whether it is tackling complex technical challenges or optimising existing systems, I bring the same diascipline and focus that motorsport engineering demands.</p>
+            
+            <p>Outside of work, I follow Formula One closely. I analyse race data, study strategy, and explore automotive innovation. This passion for speed, accuracy, and problem-solving shapes the way I approach engineering.</p>
+
+            <!-- Stats -->
+            <div class="stats-container">
+                <div class="stat-item">
+                    <span class="stat-number">3+</span>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">10+</span>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">5+</span>
+                    <div class="stat-label">Technologies</div>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+</section>
 
     <!-- Skills Section -->
     <section id="skills" class="animate-on-scroll">
@@ -649,45 +677,95 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="animate-on-scroll">
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-image">🐍</div>
-                <div class="project-content">
-                    <h3>Snake Game</h3>
-                    <p>A modern Snake Game built with Python and Pygame, featuring circular snake design, apple-shaped food, score tracking, pause/restart options, and a flashy game-over animation.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/alexoo18/Snake_Game#demo" class="project-link">View Demo</a>
-                        <a href="https://github.com/alexoo18/Snake_Game" class="project-link">GitHub</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">🐭</div>
-                <div class="project-content">
-                    <h3>Mickey Mouse</h3>
-                    <p>A simple Pygame project that draws a Mickey Mouse face using only circles and ovals.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/alexoo18/Mickey_Mouse" class="project-link">View Demo</a>
-                        <a href="https://github.com/alexoo18/Mickey_Mouse" class="project-link">GitHub</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">📊</div>
-                <div class="project-content">
-                    <h3>Track Limit Detector</h3>
-                    <p>A machine vision system using Python and OpenCV to detect track limit breaches by identifying white line crossings in motorsport imagery.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/alexoo18/Track_Limits_Violation" class="project-link">View Demo</a>
-                        <a href="https://github.com/alexoo18/Track_Limits_Violation" class="project-link">GitHub</a>
-                    </div>
+<!-- Projects Section -->
+<section id="projects" class="animate-on-scroll">
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="projects-grid" style="justify-content: center;">
+        <div class="project-card">
+            <div class="project-image">🐍</div>
+            <div class="project-content">
+                <h3>Snake Game</h3>
+                <p>A modern Snake Game built with Python and Pygame, featuring circular snake design, apple-shaped food, score tracking, pause/restart options, and a flashy game-over animation.</p>
+                <div class="project-links">
+                    <a href="https://github.com/alexoo18/Snake_Game#demo" class="project-link">View Demo</a>
+                    <a href="https://github.com/alexoo18/Snake_Game" class="project-link">GitHub</a>
                 </div>
             </div>
         </div>
-    </section>
+        <div class="project-card">
+            <div class="project-image">🐭</div>
+            <div class="project-content">
+                <h3>Mickey Mouse</h3>
+                <p>A simple Pygame project that draws a Mickey Mouse face using only circles and ovals.</p>
+                <div class="project-links">
+                    <a href="https://github.com/alexoo18/Mickey_Mouse" class="project-link">View Demo</a>
+                    <a href="https://github.com/alexoo18/Mickey_Mouse" class="project-link">GitHub</a>
+                </div>
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="project-image">📊</div>
+            <div class="project-content">
+                <h3>Track Limit Detector</h3>
+                <p>A machine vision system using Python and OpenCV to detect track limit breaches by identifying white line crossings in motorsport imagery.</p>
+                <div class="project-links">
+                    <a href="https://github.com/alexoo18/Track_Limits_Violation" class="project-link">View Demo</a>
+                    <a href="https://github.com/alexoo18/Track_Limits_Violation" class="project-link">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+    <!-- Image Carousel -->
+    <section id="Art" class="animate-on-scroll">
+        <h2 class="section-title">Art Works</h2>
+        <div class="contact-content">
+    <div class="art-carousel">
+        <div class="carousel-image">
+            <img src="https://drive.google.com/uc?id=1TauQryfkDbWR9aeKIbSuxJdsmWX_CaJI" alt="Artwork 1">
+        </div>
+        <div class="carousel-image">
+            <img src="https://drive.google.com/uc?id=1ukEkbsHgC5ONMXqSyJw1Tn05rTtqag-x" alt="Artwork 2">
+        </div>
+        <div class="carousel-image">
+            <img src="https://drive.google.com/uc?id=1xZKwzVa5PALn_Pw284WO8TnM8gx7s08W" alt="Artwork 3">
+        </div>
+        <div class="carousel-image">
+            <img src="https://drive.google.com/uc?id=1Fp7JRc5vNwCyUivkzoU_cI4sp3iXHbXM" alt="Artwork 4">
+        </div>
+        <div class="carousel-image">
+            <img src="https://drive.google.com/uc?id=18Sv9lRQaJopdhX8l-0EAvsLj0bKpmljQ" alt="Artwork 5">
+        </div>
+        <div class="carousel-image">
+            <img src="https://drive.google.com/uc?id=1EZdSIZeOwjLDN_WAqV4fgiiPJmT6QF7o" alt="Artwork 6">
+        </div>
+        <div class="carousel-image">
+            <img src="https://drive.google.com/uc?id=1zXaeJDyM1Fvik6gmbKpdmFRB0up8BJoc" alt="Artwork 7">
+        </div>
+        <div class="carousel-image">
+            <img src="https://drive.google.com/uc?id=1RgzMU_d8iTWASj_48Ezc2SaaQd6xlqro" alt="Artwork 8">
+        </div>
+        <div class="carousel-image">
+            <img src="https://drive.google.com/uc?id=1Qsq8oLJUgHHR8Jova8YuVP6KH8zw5AOE" alt="Artwork 9">
+        </div>
+        <div class="carousel-image">
+            <img src="https://drive.google.com/uc?id=1ohXIfGiaYCM44vPyCKBiI6vZFHKp9wFe" alt="Artwork 10">
+        </div>
+    </div>
+
+</section>
+    </div>
+
+<!-- View More Link -->
+	<div class="view-more-art" style="text-align: center;">
+    	<a href="https://instagram.com/ooalessandra" target="_blank" class="view-more-btn">
+        View All Artwork on Instagram
+    </a>
+</div>
+</section>
+    
+
 
     <!-- Contact Section -->
     <section id="contact" class="animate-on-scroll">
@@ -697,7 +775,7 @@
             <div class="contact-info">
                 <div class="contact-item">
                     <div class="contact-icon">📧</div>
-                    <a href="mailto:alessandrakhaing@gmail.com">alessandrakhaingoo@gmail.com</a>
+                    <a href="mailto:alessandrakhaing@gmail.com">Gmail</a>
                 </div>
                 <div class="contact-item">
                     <div class="contact-icon">💼</div>
