@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +10,6 @@
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
             font-family: 'Arial', sans-serif;
             background: #0a0a0a;
@@ -19,7 +17,6 @@
             line-height: 1.6;
             overflow-x: hidden;
         }
-
         /* Racing stripe background */
         body::before {
             content: '';
@@ -34,7 +31,6 @@
             opacity: 0.03;
             z-index: -1;
         }
-
         /* Navigation */
         nav {
             position: fixed;
@@ -46,12 +42,10 @@
             padding: 1rem 0;
             transition: all 0.3s ease;
         }
-
         nav.scrolled {
             background: rgba(0, 0, 0, 0.98);
             box-shadow: 0 2px 20px rgba(255, 0, 0, 0.1);
         }
-
         .nav-container {
             max-width: 1200px;
             margin: 0 auto;
@@ -60,7 +54,6 @@
             align-items: center;
             padding: 0 2rem;
         }
-
         .logo {
             font-size: 1.5rem;
             font-weight: bold;
@@ -70,25 +63,21 @@
             align-items: center;
             gap: 0.5rem;
         }
-
         .logo::before {
             content: '🏎️';
             font-size: 1.2rem;
         }
-
         .nav-links {
             display: flex;
             list-style: none;
             gap: 2rem;
         }
-
         .nav-links a {
             color: #ffffff;
             text-decoration: none;
             transition: color 0.3s ease;
             position: relative;
         }
-
         .nav-links a::after {
             content: '';
             position: absolute;
@@ -99,11 +88,9 @@
             background: linear-gradient(90deg, #ff0000, #ffffff);
             transition: width 0.3s ease;
         }
-
         .nav-links a:hover::after {
             width: 100%;
         }
-
         /* Hero Section */
         .hero {
             height: 100vh;
@@ -113,13 +100,11 @@
             position: relative;
             background: radial-gradient(circle at center, #1a1a1a 0%, #0a0a0a 70%);
         }
-
         .hero-content {
             text-align: center;
             z-index: 2;
             animation: fadeInUp 1s ease-out;
         }
-
         .hero h1 {
             font-size: 4rem;
             margin-bottom: 1rem;
@@ -129,7 +114,6 @@
             background-clip: text;
             animation: glow 2s ease-in-out infinite alternate;
         }
-
         .hero .subtitle {
             font-size: 1.5rem;
             color: #cccccc;
@@ -137,7 +121,6 @@
             opacity: 0;
             animation: fadeIn 1s ease-out 0.5s forwards;
         }
-
         .cta-button {
             display: inline-block;
             padding: 15px 30px;
@@ -150,7 +133,6 @@
             position: relative;
             overflow: hidden;
         }
-
         .cta-button::before {
             content: '';
             position: absolute;
@@ -161,16 +143,13 @@
             background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
             transition: left 0.5s ease;
         }
-
         .cta-button:hover::before {
             left: 100%;
         }
-
         .cta-button:hover {
             transform: translateY(-3px);
             box-shadow: 0 8px 25px rgba(255, 0, 0, 0.4);
         }
-
         /* Sections */
         section {
             padding: 100px 0;
@@ -179,14 +158,12 @@
             padding-left: 2rem;
             padding-right: 2rem;
         }
-
         .section-title {
             font-size: 3rem;
             text-align: center;
             margin-bottom: 3rem;
             position: relative;
         }
-
         .section-title::after {
             content: '';
             position: absolute;
@@ -197,7 +174,6 @@
             height: 3px;
             background: linear-gradient(90deg, #ff0000, #ffffff, #ff0000);
         }
-
         /* About Section - Fixed */
         .about-content {
             display: grid;
@@ -207,11 +183,9 @@
             max-width: 1200px;
             margin: 0 auto;
         }
-
         .about-image-container {
             position: relative;
         }
-
         .profile-image {
             width: 280px;
             height: 280px;
@@ -221,20 +195,17 @@
             transition: all 0.3s ease;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
         }
-
         .profile-image:hover {
             border-color: #ff0000;
             transform: translateY(-5px);
             box-shadow: 0 20px 40px rgba(255, 0, 0, 0.2);
         }
-
         .about-text h3 {
             color: #ff0000;
             font-size: 2rem;
             margin-bottom: 1.5rem;
             font-weight: 600;
         }
-
         .about-text p {
             color: #cccccc;
             font-size: 1.1rem;
@@ -242,13 +213,11 @@
             margin-bottom: 1.5rem;
             text-align: justify;
         }
-
         .stats-container {
             display: flex;
             gap: 2rem;
             margin-top: 2rem;
         }
-
         .stat-item {
             text-align: center;
             padding: 1rem;
@@ -257,20 +226,17 @@
             border: 1px solid #333;
             flex: 1;
         }
-
         .stat-number {
             font-size: 1.5rem;
             font-weight: bold;
             color: #ff0000;
             display: block;
         }
-
         .stat-label {
             font-size: 0.9rem;
             color: #cccccc;
             margin-top: 0.5rem;
         }
-
         /* Skills Section */
         .skills-grid {
             display: grid;
@@ -278,7 +244,6 @@
             gap: 2rem;
             margin-top: 3rem;
         }
-
         .skill-card {
             background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
             padding: 2rem;
@@ -289,7 +254,6 @@
             position: relative;
             overflow: hidden;
         }
-
         .skill-card::before {
             content: '';
             position: absolute;
@@ -301,62 +265,57 @@
             transform: translateX(-100%);
             transition: transform 0.3s ease;
         }
-
         .skill-card:hover::before {
             transform: translateX(0);
         }
-
         .skill-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 15px 30px rgba(255, 0, 0, 0.2);
             border-color: #ff0000;
         }
-
         .skill-icon {
             font-size: 3rem;
             margin-bottom: 1rem;
             color: #ff0000;
         }
-
         .skill-card h3 {
             color: #ffffff;
             margin-bottom: 1rem;
         }
-
         .skill-card p {
             color: #cccccc;
             font-size: 0.9rem;
         }
-
-        /* Projects Section - HORIZONTAL SCROLLING */
+        /* Projects Section - FIXED HORIZONTAL SCROLLING */
+        .projects-container {
+            width: 100%;
+            overflow: hidden;
+            margin-top: 3rem;
+        }
         .projects-grid {
             display: flex;
             gap: 1.5rem;
-            margin-top: 3rem;
             overflow-x: auto;
             padding-bottom: 1rem;
             scroll-behavior: smooth;
-            justify-content: center;
+            /* REMOVED justify-content: center - this was causing issues */
+            padding-left: 1rem;
+            padding-right: 1rem;
         }
-
         .projects-grid::-webkit-scrollbar {
             height: 8px;
         }
-
         .projects-grid::-webkit-scrollbar-track {
             background: #1a1a1a;
             border-radius: 10px;
         }
-
         .projects-grid::-webkit-scrollbar-thumb {
             background: linear-gradient(90deg, #ff0000, #cc0000);
             border-radius: 10px;
         }
-
         .projects-grid::-webkit-scrollbar-thumb:hover {
             background: linear-gradient(90deg, #cc0000, #990000);
         }
-
         .project-card {
             background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
             border-radius: 15px;
@@ -367,8 +326,10 @@
             min-width: 280px;
             max-width: 280px;
             flex-shrink: 0;
+            /* ADDED: Ensure visibility */
+            opacity: 1;
+            visibility: visible;
         }
-
         .project-card::before {
             content: '';
             position: absolute;
@@ -380,16 +341,13 @@
             opacity: 0;
             transition: opacity 0.3s ease;
         }
-
         .project-card:hover::before {
             opacity: 1;
         }
-
         .project-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
         }
-
         .project-image {
             height: 150px;
             background: linear-gradient(45deg, #ff0000, #000000);
@@ -399,17 +357,14 @@
             font-size: 3rem;
             color: white;
         }
-
         .project-content {
             padding: 1.2rem;
         }
-
         .project-content h3 {
             color: #ffffff;
             margin-bottom: 0.8rem;
             font-size: 1.2rem;
         }
-
         .project-content p {
             color: #cccccc;
             margin-bottom: 1.2rem;
@@ -417,12 +372,10 @@
             text-align: justify;
             line-height: 1.5;
         }
-
         .project-links {
             display: flex;
             gap: 0.8rem;
         }
-
         .project-link {
             padding: 6px 12px;
             background: linear-gradient(45deg, #ff0000, #cc0000);
@@ -436,12 +389,10 @@
             z-index: 10;
             display: inline-block;
         }
-
         .project-link:hover {
             background: linear-gradient(45deg, #cc0000, #990000);
             transform: translateY(-2px);
         }
-
         /* Art Carousel Section - Fixed */
         .art-carousel {
             display: flex;
@@ -451,21 +402,17 @@
             scroll-behavior: smooth;
             margin-bottom: 3rem;
         }
-
         .art-carousel::-webkit-scrollbar {
             height: 8px;
         }
-
         .art-carousel::-webkit-scrollbar-track {
             background: #1a1a1a;
             border-radius: 10px;
         }
-
         .art-carousel::-webkit-scrollbar-thumb {
             background: linear-gradient(90deg, #ff0000, #cc0000);
             border-radius: 10px;
         }
-
         .carousel-image {
             min-width: 300px;
             height: 300px;
@@ -475,27 +422,22 @@
             border: 1px solid #333;
             flex-shrink: 0;
         }
-
         .carousel-image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.3s ease;
         }
-
         .carousel-image:hover {
             transform: translateY(-10px);
             box-shadow: 0 20px 40px rgba(255, 0, 0, 0.2);
         }
-
         .carousel-image:hover img {
             transform: scale(1.05);
         }
-
         .view-more-art {
             text-align: center;
         }
-
         .view-more-btn {
             display: inline-block;
             padding: 12px 25px;
@@ -507,19 +449,16 @@
             transition: all 0.3s ease;
             box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
         }
-
         .view-more-btn:hover {
             transform: translateY(-3px);
             box-shadow: 0 8px 25px rgba(255, 0, 0, 0.4);
         }
-
         /* Contact Section */
         .contact-content {
             text-align: center;
             max-width: 600px;
             margin: 0 auto;
         }
-
         .contact-info {
             display: flex;
             justify-content: center;
@@ -527,7 +466,6 @@
             margin-top: 3rem;
             flex-wrap: wrap;
         }
-
         .contact-item {
             display: flex;
             flex-direction: column;
@@ -535,26 +473,21 @@
             gap: 0.5rem;
             transition: transform 0.3s ease;
         }
-
         .contact-item:hover {
             transform: translateY(-5px);
         }
-
         .contact-icon {
             font-size: 2rem;
             color: #ff0000;
         }
-
         .contact-item a {
             color: #cccccc;
             text-decoration: none;
             transition: color 0.3s ease;
         }
-
         .contact-item a:hover {
             color: #ff0000;
         }
-
         /* Footer */
         footer {
             background: #000000;
@@ -562,7 +495,6 @@
             padding: 2rem;
             border-top: 1px solid #333;
         }
-
         /* Animations */
         @keyframes fadeInUp {
             from {
@@ -574,7 +506,6 @@
                 transform: translateY(0);
             }
         }
-
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -583,7 +514,6 @@
                 opacity: 1;
             }
         }
-
         @keyframes glow {
             from {
                 text-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
@@ -592,59 +522,57 @@
                 text-shadow: 0 0 20px rgba(255, 0, 0, 0.8), 0 0 30px rgba(255, 0, 0, 0.6);
             }
         }
-
         /* Responsive Design */
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
             }
-
             .hero h1 {
                 font-size: 2.5rem;
             }
-
             .hero .subtitle {
                 font-size: 1.2rem;
             }
-
             .about-content {
                 grid-template-columns: 1fr;
                 gap: 2rem;
                 text-align: center;
             }
-
             .profile-image {
                 width: 220px;
                 height: 220px;
                 margin: 0 auto;
             }
-
             .stats-container {
                 flex-direction: column;
                 gap: 1rem;
             }
-
             .section-title {
                 font-size: 2rem;
             }
-
             .contact-info {
                 flex-direction: column;
                 gap: 2rem;
             }
-
             section {
                 padding: 50px 1rem;
             }
+            /* FIXED: Better mobile handling for projects */
+            .projects-grid {
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+            }
+            .project-card {
+                min-width: 260px;
+                max-width: 260px;
+            }
         }
-
         /* Scroll animations */
         .animate-on-scroll {
             opacity: 0;
             transform: translateY(50px);
             transition: all 0.6s ease;
         }
-
         .animate-on-scroll.animated {
             opacity: 1;
             transform: translateY(0);
@@ -666,7 +594,6 @@
             </ul>
         </div>
     </nav>
-
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
@@ -675,7 +602,6 @@
             <a href="#projects" class="cta-button">View My Work</a>
         </div>
     </section>
-
     <!-- About Section -->
     <section id="about" class="animate-on-scroll">
         <h2 class="section-title">About Me</h2>
@@ -693,7 +619,6 @@
                 <p>My approach reflects race strategy: thorough preparation, exact execution, and continuous refinement. Whether it is tackling complex technical challenges or optimising existing systems, I bring the same discipline and focus that motorsport engineering demands.</p>
                 
                 <p>Outside of work, I follow Formula One closely. I analyse race data, study strategy, and explore automotive innovation. This passion for speed, accuracy, and problem-solving shapes the way I approach engineering.</p>
-
                 <!-- Stats -->
                 <div class="stats-container">
                     <div class="stat-item">
@@ -712,7 +637,6 @@
             </div>
         </div>
     </section>
-
     <!-- Skills Section -->
     <section id="skills" class="animate-on-scroll">
         <h2 class="section-title">Technical Arsenal</h2>
@@ -744,50 +668,61 @@
     <!-- Projects Section -->
     <section id="projects" class="animate-on-scroll">
         <h2 class="section-title">Featured Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-image">🐍</div>
-                <div class="project-content">
-                    <h3>Snake Game</h3>
-                    <p>A modern Snake Game built with Python and Pygame, featuring circular snake design, apple-shaped food, score tracking, pause/restart options, and a flashy game-over animation.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/alexoo18/Snake_Game" class="project-link">GitHub</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">🐭</div>
-                <div class="project-content">
-                    <h3>Mickey Mouse</h3>
-                    <p>A simple Pygame project that draws a Mickey Mouse face using only circles and ovals.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/alexoo18/Mickey_Mouse" class="project-link">GitHub</a>
-                    </div>
-                </div>
-            </div>
+        <div class="projects-container">
+            <div class="projects-grid">
                 <div class="project-card">
-                <div class="project-image">🏁 🏎️ 💨</div>
-                <div class="project-content">
-                    <h3>Formula One Data Streaming Simulator</h3>
-                    <p>Real-time F1 race simulator that streams historical race data as live telemetry with interactive dashboards showing position changes, lap times, and race statistics.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/alexoo18/F1_Data_Simulator" class="project-link">GitHub</a>
+                    <div class="project-image">🐍</div>
+                    <div class="project-content">
+                        <h3>Snake Game</h3>
+                        <p>A modern Snake Game built with Python and Pygame, featuring circular snake design, apple-shaped food, score tracking, pause/restart options, and a flashy game-over animation.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/alexoo18/Snake_Game" class="project-link">GitHub</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">📊</div>
-                <div class="project-content">
-                    <h3>Track Limit Detector</h3>
-                    <p>A machine vision system using Python and OpenCV to detect track limit breaches by identifying white line crossings in motorsport imagery.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/alexoo18/Track_Limits_Violation" class="project-link">GitHub</a>
+                <div class="project-card">
+                    <div class="project-image">🏁 🏎️ 💨</div>
+                    <div class="project-content">
+                        <h3>Formula One Data Streaming Simulator</h3>
+                        <p>Real-time F1 race simulator that streams historical race data as live telemetry with interactive dashboards showing position changes, lap times, and race statistics.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/alexoo18/F1_Data_Simulator" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">🏎️📈 </div>
+                    <div class="project-content">
+                        <h3>Formula One Qualifying Lap Analysis</h3>
+                        <p>Interactive Formula 1 Qualifying Analysis Dashboard built with Python, Streamlit, and FastF1. Features telemetry visualisation, performance metrics, and track maps for pole lap. </p>
+                        <div class="project-links">
+                            <a href="https://github.com/alexoo18/F1_Quali_Analysis" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">📊</div>
+                    <div class="project-content">
+                        <h3>Track Limit Detector</h3>
+                        <p>A machine vision system using Python and OpenCV to detect track limit breaches by identifying white line crossings in motorsport imagery.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/alexoo18/Track_Limits_Violation" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">🐭</div>
+                    <div class="project-content">
+                        <h3>Mickey Mouse</h3>
+                        <p>A simple Pygame project that draws a Mickey Mouse face using only circles and ovals.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/alexoo18/Mickey_Mouse" class="project-link">GitHub</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
     <!-- Art Section -->
     <section id="art" class="animate-on-scroll">
         <h2 class="section-title">Art Works</h2>
@@ -808,7 +743,6 @@
                 <img src="images/unnamed.png" alt="Unnamed">
             </div>
          </div>
-
         <!-- View More Link -->
         <div class="view-more-art">
             <a href="https://instagram.com/ooalessandra" target="_blank" class="view-more-btn">
@@ -816,7 +750,6 @@
             </a>
         </div>
     </section>
-
     <!-- Contact Section -->
     <section id="contact" class="animate-on-scroll">
         <h2 class="section-title">Let's Connect!</h2>
@@ -838,12 +771,10 @@
             </div>
         </div>
     </section>
-
     <!-- Footer -->
     <footer>
         <p>&copy; 2025 Alessandra Khaing Oo. Built with passion for code and speed. 🏎️</p>
     </footer>
-
     <script>
         // Navbar scroll effect
         window.addEventListener('scroll', () => {
@@ -854,7 +785,6 @@
                 navbar.classList.remove('scrolled');
             }
         });
-
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -868,13 +798,11 @@
                 }
             });
         });
-
         // Scroll animations
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
         };
-
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -882,22 +810,12 @@
                 }
             });
         }, observerOptions);
-
         document.querySelectorAll('.animate-on-scroll').forEach(el => {
             observer.observe(el);
         });
-
-        // Add some interactive hover effects
-        document.querySelectorAll('.skill-card, .project-card').forEach(card => {
-            card.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-10px) scale(1.02)';
-            });
-            
-            card.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0) scale(1)';
-            });
-        });
-
+        // FIXED: Removed conflicting hover effects that could cause issues
+        // The CSS hover effects are sufficient and more reliable
+        
         // Dynamic typing effect for hero subtitle
         function typeWriter(text, element, speed = 100) {
             let i = 0;
@@ -913,13 +831,29 @@
             }
             type();
         }
-
         // Start typing effect when page loads
         window.addEventListener('load', () => {
             setTimeout(() => {
                 const subtitle = document.querySelector('.hero .subtitle');
                 typeWriter('Aspiring Motorsport Performance Engineer', subtitle, 80);
             }, 1000);
+        });
+        
+        // ADDED: Debug function to check all project cards are visible
+        function checkProjectCards() {
+            const cards = document.querySelectorAll('.project-card');
+            console.log(`Found ${cards.length} project cards:`);
+            cards.forEach((card, index) => {
+                const title = card.querySelector('h3').textContent;
+                const rect = card.getBoundingClientRect();
+                const isVisible = rect.width > 0 && rect.height > 0;
+                console.log(`Card ${index + 1}: "${title}" - Visible: ${isVisible}`);
+            });
+        }
+        
+        // Check cards after page loads
+        window.addEventListener('load', () => {
+            setTimeout(checkProjectCards, 1000);
         });
     </script>
 </body>
